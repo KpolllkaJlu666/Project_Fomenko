@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #№1 Сумма ряда: X - X^2/2 + X^3/3 - ... + (-1)^(N-1) * X^N / N
 # (приближение ln(1+X), |X| < 1, N > 0)
 
@@ -24,3 +25,38 @@ try:
 
 except ValueError:
     print("Неверный ввод: требуется |X| < 1 и целое N > 0.")
+=======
+# 1 
+
+try:
+    x = float(input())
+    n = int(input())
+    if not (-1 < x < 1) or n <= 0:
+        raise ValueError
+    s = 0
+    k = 1
+    term = x
+    while k <= n:
+        s += term
+        k1 = k + 1
+        if k1 <= n:
+            term = term * (-x) * (k / k1)
+        k = k1
+    print(s)
+except:
+    print("error")
+
+try:
+    m = int(input())
+    if m <= 0:
+        raise ValueError
+    t = m
+    while t % 3 == 0:
+        t //= 3
+    if t == 1:
+        print("TRUE")
+    else:
+        print("FALSE")
+except:
+    print("error")
+>>>>>>> f51874772bbe6a86d7f6d60b28db20b9c6b4c64f
