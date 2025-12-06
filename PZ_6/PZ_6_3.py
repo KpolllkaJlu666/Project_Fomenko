@@ -20,12 +20,13 @@ for i in range(N):
 Bx = float(input("Введите координату Bx: "))
 By = float(input("Введите координату By: "))
 
-min_dist = float('inf')
+min_dist = float('inf')#минимальное расстояние до точки B, которое мы пока нашли, по началу бесконечность
 index_min = 0
 
 for i in range(N):
-    R = math.sqrt((X[i] - Bx)**2 + (Y[i] - By)**2)
-    if R < min_dist:
+    R = math.sqrt((X[i] - Bx)**2 + (Y[i] - By)**2)#Считаем расстояние от точки Aᵢ(X[i], Y[i]) до точки B(Bx, By) по формуле
+
+    if R < min_dist:#Если текущее расстояние R меньше, чем то, что мы считали минимальным раньше
         min_dist = R
         index_min = i
 
