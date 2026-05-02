@@ -16,8 +16,8 @@ fisherman_1 = {"щука", "окунь", "карась"}
 fisherman_2 = {"карп", "лещ", "окунь"}
 fisherman_3 = {"сом", "карась", "плотва"}
 
-caught_fish = fisherman_1 | fisherman_2 | fisherman_3
-not_caught_fish = lake_fish - caught_fish
+caught_fish = fisherman_1 | fisherman_2 | fisherman_3 #лбъединяем множества
+not_caught_fish = lake_fish - caught_fish#тут разность, то есть из всех убираем то, что уже поймали
 
 print("Виды рыб, которые водятся в озере:")
 print(lake_fish)
