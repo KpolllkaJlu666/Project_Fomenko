@@ -1,3 +1,6 @@
+#Вариант 21
+#https://lh5.googleusercontent.com/- 
+#wG_YHAIbVZU/Ud696wJg0FI/AAAAAAAACP4/eaIzPTZRixE/w596-h642-no/4_3.png
 import tkinter as tk
 from tkinter import ttk, messagebox
 
