@@ -19,3 +19,4 @@ for i in inf[7:12]:
 print('Максимальные продажи:')
 print(products['Продукт 1'], '-', max(products['Продажи 1']), 'кг')
 print(products['Продукт 2'], '-', max(products['Продажи 2']), 'кг')
+print(type(products))

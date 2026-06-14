@@ -1,22 +1,24 @@
 #Вариант 21.
 #1. В матрице найти минимальный элемент в предпоследней строке.
 
-matrix = [#создаём матрицу (пример)
-    [5, 2, 9],
-    [8, 1, 4],
-    [7, 3, 6]
-]
+from random import randint
 
-print("Матрица:")
-for row in matrix:
-    print(row)
+n = int(input("Введите количество строк: "))
+m = int(input("Введите количество столбцов: "))
 
-row = matrix[-2]#предпоследняя строка
+matrix = list(
+    map(
+        lambda _: list(map(lambda _: randint(1, 20), range(m))),
+        range(n)
+    )
+)
 
-min_value = row[0]#поиск минимума
-for x in row:
-    if x < min_value:
-        min_value = x
+print("\nМатрица:")
+list(map(print, matrix))
 
-print("\nПредпоследняя строка:", row)
-print("Минимальный элемент:", min_value)
+pre_last_row = matrix[-2]
+
+min_element = min(pre_last_row)
+
+print("\nПредпоследняя строка:", pre_last_row)
+print("Минимальный элемент:", min_element)
